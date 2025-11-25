@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Emmanuel Perez\\Documents\\Programacion III parte 3\\Tareas Indivuales\\Codigo\\GitFlow\\GitFlow Tarea 3\\GitFlow Tarea 3\\GitFlow Tarea 3.csproj": {}
+    "C:\\Users\\Emmanuel Perez\\Documents\\Programacion III parte 3\\Tareas Indivuales\\Codigo\\GitFlow\\GitFlow Tarea 3\\GitFlow Tarea 3.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Emmanuel Perez\\Documents\\Programacion III parte 3\\Tareas Indivuales\\Codigo\\GitFlow\\GitFlow Tarea 3\\GitFlow Tarea 3\\GitFlow Tarea 3.csproj": {
+    "C:\\Users\\Emmanuel Perez\\Documents\\Programacion III parte 3\\Tareas Indivuales\\Codigo\\GitFlow\\GitFlow Tarea 3\\GitFlow Tarea 3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Emmanuel Perez\\Documents\\Programacion III parte 3\\Tareas Indivuales\\Codigo\\GitFlow\\GitFlow Tarea 3\\GitFlow Tarea 3\\GitFlow Tarea 3.csproj",
+        "projectUniqueName": "C:\\Users\\Emmanuel Perez\\Documents\\Programacion III parte 3\\Tareas Indivuales\\Codigo\\GitFlow\\GitFlow Tarea 3\\GitFlow Tarea 3.csproj",
         "projectName": "GitFlow Tarea 3",
-        "projectPath": "C:\\Users\\Emmanuel Perez\\Documents\\Programacion III parte 3\\Tareas Indivuales\\Codigo\\GitFlow\\GitFlow Tarea 3\\GitFlow Tarea 3\\GitFlow Tarea 3.csproj",
+        "projectPath": "C:\\Users\\Emmanuel Perez\\Documents\\Programacion III parte 3\\Tareas Indivuales\\Codigo\\GitFlow\\GitFlow Tarea 3\\GitFlow Tarea 3.csproj",
         "packagesPath": "C:\\Users\\Emmanuel Perez\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Emmanuel Perez\\Documents\\Programacion III parte 3\\Tareas Indivuales\\Codigo\\GitFlow\\GitFlow Tarea 3\\GitFlow Tarea 3\\obj\\",
+        "outputPath": "C:\\Users\\Emmanuel Perez\\Documents\\Programacion III parte 3\\Tareas Indivuales\\Codigo\\GitFlow\\GitFlow Tarea 3\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
