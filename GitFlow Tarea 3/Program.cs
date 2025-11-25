@@ -1,13 +1,136 @@
-﻿
+﻿using GitFlow_Tarea_3.Base_Entity;
+using GitFlow_Tarea_3.Cajero;
+using GitFlow_Tarea_3.Entity;
+using GitFlow_Tarea_3.Factory;
+
 namespace GitFlow_Tarea_3
 {
-    internal class Program
+    public class Program
     {
+        // Simulación de la base de datos: una lista estática de productos
+        private static List<Producto> listaProductos = new List<Producto>();
+        private static int nextId = 1; // Contador para asignar IDs únicos
+        private static readonly TiendaManager manager = TiendaManager.Instance;
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
-            Console.WriteLine("123");
-            Console.WriteLine("Este es un nuevo commit");
+            // Rellenar con algunos datos iniciales (opcional)
+            listaProductos.Add(new Producto(nextId++, "Laptop", 1200.50m));
+            listaProductos.Add(new Producto(nextId++, "Mouse Gamer", 45.99m));
+            listaProductos.Add(new Producto(nextId++, "Teclado Mecánico", 89.90m));
+
+            bool running = true;
+            while (running)
+            {
+                MostrarMenu();
+                string opcion = Console.ReadLine();
+                Console.WriteLine("-----------------------------------");
+
+                switch (opcion)
+                {
+                    case "1":
+                        CrearProducto(); // CREATE
+                        break;
+                    case "2":
+                        LeerProductos(); // READ
+                        break;
+                    // ... (Otras opciones 3, 4, 5)
+                    case "5":
+                        running = false;
+                        break;
+                    default:
+                        Console.WriteLine("Opción no válida. Intente de nuevo.");
+                        break;
+                }
+                Console.WriteLine("\nPresione cualquier tecla para continuar...");
+                Console.ReadKey();
+                Console.Clear();
+            }
+            Console.WriteLine("Programa finalizado. ¡Hasta luego!");
+        }
+
+        // --- Métodos de Operación Modificados ---
+
+        private static void CrearProducto()
+        {
+            Console.WriteLine("--- CREAR NUEVO PRODUCTO ---");
+
+            Console.Write("Ingrese el Tipo (Electronico/Alimento): ");
+            string tipo = Console.ReadLine();
+
+            Console.Write("Ingrese el Nombre: ");
+            string nombre = Console.ReadLine();
+
+            Console.Write("Ingrese el Precio: ");
+            if (!decimal.TryParse(Console.ReadLine(), out decimal precio) || precio <= 0)
+            {
+                Console.WriteLine("❌ Error: Precio no válido.");
+                return;
+            }
+
+            // Recopilar detalles específicos para el Factory
+            var detalles = new Dictionary<string, object>();
+
+            try
+            {
+                if (tipo.ToLower() == "electronico")
+                {
+                    Console.Write("Ingrese la Marca: ");
+                    detalles.Add("Marca", Console.ReadLine());
+                }
+                else if (tipo.ToLower() == "alimento")
+                {
+                    Console.Write("Ingrese Fecha de Caducidad (yyyy-MM-dd): ");
+                    if (DateTime.TryParse(Console.ReadLine(), out DateTime caducidad))
+                    {
+                        detalles.Add("Caducidad", caducidad);
+                    }
+                    else
+                    {
+                        Console.WriteLine("⚠️ Advertencia: Formato de fecha no válido. Usando fecha por defecto.");
+                    }
+                }
+
+                // Llamada al Factory usando el ID del Singleton
+                Producto nuevoProducto = ProductoFactory.CrearProducto(manager.NextId, tipo, nombre, precio, detalles);
+                manager.AgregarProducto(nuevoProducto);
+
+                Console.WriteLine($"✅ Producto creado con éxito: {nuevoProducto.ToString()}");
+            }
+            catch (ArgumentException ex)
+            {
+                Console.WriteLine($"❌ Error al crear producto: {ex.Message}");
+            }
+        }
+
+        private static void LeerProductos()
+        {
+            var lista = manager.ListaProductos;
+            Console.WriteLine($"--- LISTA DE PRODUCTOS ({lista.Count} en total) ---");
+            if (lista.Count == 0)
+            {
+                Console.WriteLine("¡No hay productos registrados!");
+                return;
+            }
+
+            foreach (var producto in lista)
+            {
+                Console.WriteLine(producto.ToString());
+            }
+        }
+
+        // Los métodos ActualizarProducto y EliminarProducto deberían
+        // modificarse para usar manager.ObtenerProductoPorId() y operar
+        // directamente en manager.ListaProductos.
+        // ...
+        private static void MostrarMenu()
+        {
+            Console.WriteLine("===== 🛍️ Gestor de Productos CRUD (Factory + Singleton) =====");
+            Console.WriteLine("1. Crear Producto");
+            Console.WriteLine("2. Listar Productos");
+            Console.WriteLine("3. Actualizar Producto");
+            Console.WriteLine("4. Eliminar Producto");
+            Console.WriteLine("5. Salir");
+            Console.Write("Seleccione una opción: ");
         }
     }
 }
