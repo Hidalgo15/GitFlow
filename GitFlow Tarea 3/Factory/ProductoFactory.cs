@@ -1,4 +1,5 @@
 ﻿using GitFlow_Tarea_3.Base_Entity;
+using GitFlow_Tarea_3.Entity;
 
 
 namespace GitFlow_Tarea_3.Factory
