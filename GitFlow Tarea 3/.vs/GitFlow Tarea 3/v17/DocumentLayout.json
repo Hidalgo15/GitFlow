@@ -1,28 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Emmanuel Perez\\Documents\\Programacion III parte 3\\Tareas Indivuales\\Codigo\\GitFlow\\GitFlow Tarea 3\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{2A3F124A-2617-4A70-B0D0-B5DA9674C674}|GitFlow Tarea 3\\GitFlow Tarea 3.csproj|c:\\users\\emmanuel perez\\documents\\programacion iii parte 3\\tareas indivuales\\codigo\\gitflow\\gitflow tarea 3\\gitflow tarea 3\\factory\\productofactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A3F124A-2617-4A70-B0D0-B5DA9674C674}|GitFlow Tarea 3\\GitFlow Tarea 3.csproj|solutionrelative:gitflow tarea 3\\factory\\productofactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A3F124A-2617-4A70-B0D0-B5DA9674C674}|GitFlow Tarea 3\\GitFlow Tarea 3.csproj|c:\\users\\emmanuel perez\\documents\\programacion iii parte 3\\tareas indivuales\\codigo\\gitflow\\gitflow tarea 3\\gitflow tarea 3\\producto\\alimento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A3F124A-2617-4A70-B0D0-B5DA9674C674}|GitFlow Tarea 3\\GitFlow Tarea 3.csproj|solutionrelative:gitflow tarea 3\\producto\\alimento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A3F124A-2617-4A70-B0D0-B5DA9674C674}|GitFlow Tarea 3\\GitFlow Tarea 3.csproj|c:\\users\\emmanuel perez\\documents\\programacion iii parte 3\\tareas indivuales\\codigo\\gitflow\\gitflow tarea 3\\gitflow tarea 3\\producto\\electronico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A3F124A-2617-4A70-B0D0-B5DA9674C674}|GitFlow Tarea 3\\GitFlow Tarea 3.csproj|solutionrelative:gitflow tarea 3\\producto\\electronico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A3F124A-2617-4A70-B0D0-B5DA9674C674}|GitFlow Tarea 3\\GitFlow Tarea 3.csproj|c:\\users\\emmanuel perez\\documents\\programacion iii parte 3\\tareas indivuales\\codigo\\gitflow\\gitflow tarea 3\\gitflow tarea 3\\base entity\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A3F124A-2617-4A70-B0D0-B5DA9674C674}|GitFlow Tarea 3\\GitFlow Tarea 3.csproj|solutionrelative:gitflow tarea 3\\base entity\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A3F124A-2617-4A70-B0D0-B5DA9674C674}|GitFlow Tarea 3\\GitFlow Tarea 3.csproj|c:\\users\\emmanuel perez\\documents\\programacion iii parte 3\\tareas indivuales\\codigo\\gitflow\\gitflow tarea 3\\gitflow tarea 3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A3F124A-2617-4A70-B0D0-B5DA9674C674}|GitFlow Tarea 3\\GitFlow Tarea 3.csproj|solutionrelative:gitflow tarea 3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -30,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -75,67 +54,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ProductoFactory.cs",
-              "DocumentMoniker": "C:\\Users\\Emmanuel Perez\\Documents\\Programacion III parte 3\\Tareas Indivuales\\Codigo\\GitFlow\\GitFlow Tarea 3\\GitFlow Tarea 3\\Factory\\ProductoFactory.cs",
-              "RelativeDocumentMoniker": "GitFlow Tarea 3\\Factory\\ProductoFactory.cs",
-              "ToolTip": "C:\\Users\\Emmanuel Perez\\Documents\\Programacion III parte 3\\Tareas Indivuales\\Codigo\\GitFlow\\GitFlow Tarea 3\\GitFlow Tarea 3\\Factory\\ProductoFactory.cs",
-              "RelativeToolTip": "GitFlow Tarea 3\\Factory\\ProductoFactory.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T01:30:39.523Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Alimento.cs",
-              "DocumentMoniker": "C:\\Users\\Emmanuel Perez\\Documents\\Programacion III parte 3\\Tareas Indivuales\\Codigo\\GitFlow\\GitFlow Tarea 3\\GitFlow Tarea 3\\Producto\\Alimento.cs",
-              "RelativeDocumentMoniker": "GitFlow Tarea 3\\Producto\\Alimento.cs",
-              "ToolTip": "C:\\Users\\Emmanuel Perez\\Documents\\Programacion III parte 3\\Tareas Indivuales\\Codigo\\GitFlow\\GitFlow Tarea 3\\GitFlow Tarea 3\\Producto\\Alimento.cs",
-              "RelativeToolTip": "GitFlow Tarea 3\\Producto\\Alimento.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T01:29:51.666Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Electronico.cs",
-              "DocumentMoniker": "C:\\Users\\Emmanuel Perez\\Documents\\Programacion III parte 3\\Tareas Indivuales\\Codigo\\GitFlow\\GitFlow Tarea 3\\GitFlow Tarea 3\\Producto\\Electronico.cs",
-              "RelativeDocumentMoniker": "GitFlow Tarea 3\\Producto\\Electronico.cs",
-              "ToolTip": "C:\\Users\\Emmanuel Perez\\Documents\\Programacion III parte 3\\Tareas Indivuales\\Codigo\\GitFlow\\GitFlow Tarea 3\\GitFlow Tarea 3\\Producto\\Electronico.cs",
-              "RelativeToolTip": "GitFlow Tarea 3\\Producto\\Electronico.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T01:15:04.906Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Producto.cs",
-              "DocumentMoniker": "C:\\Users\\Emmanuel Perez\\Documents\\Programacion III parte 3\\Tareas Indivuales\\Codigo\\GitFlow\\GitFlow Tarea 3\\GitFlow Tarea 3\\Base Entity\\Producto.cs",
-              "RelativeDocumentMoniker": "GitFlow Tarea 3\\Base Entity\\Producto.cs",
-              "ToolTip": "C:\\Users\\Emmanuel Perez\\Documents\\Programacion III parte 3\\Tareas Indivuales\\Codigo\\GitFlow\\GitFlow Tarea 3\\GitFlow Tarea 3\\Base Entity\\Producto.cs",
-              "RelativeToolTip": "GitFlow Tarea 3\\Base Entity\\Producto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T00:40:11.899Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Emmanuel Perez\\Documents\\Programacion III parte 3\\Tareas Indivuales\\Codigo\\GitFlow\\GitFlow Tarea 3\\GitFlow Tarea 3\\Program.cs",
-              "RelativeDocumentMoniker": "GitFlow Tarea 3\\Program.cs",
-              "ToolTip": "C:\\Users\\Emmanuel Perez\\Documents\\Programacion III parte 3\\Tareas Indivuales\\Codigo\\GitFlow\\GitFlow Tarea 3\\GitFlow Tarea 3\\Program.cs",
-              "RelativeToolTip": "GitFlow Tarea 3\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T00:39:10.351Z"
             },
             {
               "$type": "Bookmark",
