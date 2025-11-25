@@ -15,6 +15,7 @@ namespace GitFlow_Tarea_3.Base_Entity
             Precio = precio;
         }
 
+        public abstract decimal CalcularPrecioFinal(); // <--- NUEVO MÉTODO
         public override string ToString()
         {
             return $"ID: {Id}, Tipo: {Tipo}, Nombre: {Nombre}, Precio: {Precio:C}";
