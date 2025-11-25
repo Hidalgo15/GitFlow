@@ -6,6 +6,8 @@ namespace GitFlow_Tarea_3.Entity
     {
         public override string Tipo => "Electrónico"; // Implementación del tipo
         public string Marca { get; set; }
+        private const decimal ImpuestoTasa = 0.15m;
+
 
         public Electronico(int id, string nombre, decimal precio, string marca)
             : base(id, nombre, precio)
@@ -13,6 +15,11 @@ namespace GitFlow_Tarea_3.Entity
             Marca = marca;
         }
 
+        public override decimal CalcularPrecioFinal()
+        {
+            // Precio base + (Precio base * Impuesto)
+            return Precio * (1 + ImpuestoTasa);
+        }
         public override string ToString()
         {
             // Agregamos el campo específico de esta subclase
