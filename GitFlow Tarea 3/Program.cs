@@ -14,9 +14,18 @@ namespace GitFlow_Tarea_3
         static void Main(string[] args)
         {
             // Rellenar con algunos datos iniciales (opcional)
-            listaProductos.Add(new Producto(nextId++, "Laptop", 1200.50m));
-            listaProductos.Add(new Producto(nextId++, "Mouse Gamer", 45.99m));
-            listaProductos.Add(new Producto(nextId++, "Teclado Mecánico", 89.90m));
+            manager.AgregarProducto(ProductoFactory.CrearProducto(
+            manager.NextId, "Electronico", "Laptop", 1200.50m,
+            new Dictionary<string, object> { { "Marca", "TechBrand" } }));
+
+            manager.AgregarProducto(ProductoFactory.CrearProducto(
+            manager.NextId, "Electronico", "Mouse Gamer", 45.99m,
+            new Dictionary<string, object> { { "Marca", "GamingCo" } }));
+
+            manager.AgregarProducto(ProductoFactory.CrearProducto(
+            manager.NextId, "Alimento", "Pan Integral", 2.50m,
+            new Dictionary<string, object> { { "Caducidad", DateTime.Today.AddDays(10) } }));
+
 
             bool running = true;
             while (running)
@@ -34,7 +43,17 @@ namespace GitFlow_Tarea_3
                         LeerProductos(); // READ
                         break;
                     // ... (Otras opciones 3, 4, 5)
-                    case "5":
+                    case "3":
+                        break;
+
+                        case "4":
+                            break;
+
+
+                    case "5": // NUEVA OPCIÓN
+                        MostrarResumenPrecios();
+                        break;
+                    case "6": // OPCIÓN DE SALIR MOVIDA
                         running = false;
                         break;
                     default:
@@ -118,6 +137,33 @@ namespace GitFlow_Tarea_3
             }
         }
 
+
+
+
+        // --- NUEVO MÉTODO ---
+        private static void MostrarResumenPrecios()
+        {
+            var lista = manager.ListaProductos;
+            Console.WriteLine("--- RESUMEN DE PRECIOS FINALES (Impuestos/Descuentos) ---");
+            if (lista.Count == 0)
+            {
+                Console.WriteLine("¡No hay productos registrados!");
+                return;
+            }
+
+            foreach (var producto in lista)
+            {
+                // La magia del Polimorfismo: llama al método específico de Electronico o Alimento
+                decimal precioFinal = producto.CalcularPrecioFinal();
+
+                Console.WriteLine($"Producto: {producto.Nombre} ({producto.Tipo})");
+                Console.WriteLine($"  Precio Base: {producto.Precio:C}");
+                Console.WriteLine($"  Precio Final: {precioFinal:C}");
+                Console.WriteLine("-----------------------------------");
+            }
+        }
+
+
         // Los métodos ActualizarProducto y EliminarProducto deberían
         // modificarse para usar manager.ObtenerProductoPorId() y operar
         // directamente en manager.ListaProductos.
@@ -127,9 +173,11 @@ namespace GitFlow_Tarea_3
             Console.WriteLine("===== 🛍️ Gestor de Productos CRUD (Factory + Singleton) =====");
             Console.WriteLine("1. Crear Producto");
             Console.WriteLine("2. Listar Productos");
-            Console.WriteLine("3. Actualizar Producto");
-            Console.WriteLine("4. Eliminar Producto");
-            Console.WriteLine("5. Salir");
+            Console.WriteLine("3. Actualizar Producto (PENDIENTE)");
+            Console.WriteLine("4. Eliminar Producto (PENDIENTE)");
+            Console.WriteLine("5. Mostrar Resumen de Precios Finales 💰"); // NUEVA LÍNEA
+            Console.WriteLine("6. Salir"); // OPCIÓN MOVEMOS A 6
+            Console.Write("Seleccione una opción: ");
             Console.Write("Seleccione una opción: ");
         }
     }
