@@ -1,10 +1,5 @@
 ﻿using GitFlow_Tarea_3.Base_Entity;
 using GitFlow_Tarea_3.Factory;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace GitFlow_Tarea_3.Cajero
 {
