@@ -1,6 +1,9 @@
 ﻿
 
-namespace GitFlow_Tarea_3.Base_Entity
+using GitFlow_Tarea_3.Base_Entity;
+
+namespace GitFlow_Tarea_3.Entity
+
 {
     public class Alimento : Producto
     {
